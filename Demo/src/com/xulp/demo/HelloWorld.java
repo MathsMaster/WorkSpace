@@ -24,7 +24,7 @@ public class HelloWorld {
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		SelectSort.selectSort(array);
-		System.out.println("Ñ¡ÔñÅÅÐòÊ±¼ä : "+watch.elapsedTime());
+		System.out.println("è€—è´¹æ—¶é—´ : "+watch.elapsedTime());
 //		ArrayUtils.printArray(array);
 	}
 	
@@ -34,7 +34,7 @@ public class HelloWorld {
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		InsertSort.insertSort(array);
-		System.out.println("²åÈëÅÅÐòÊ±¼ä : "+watch.elapsedTime());
+		System.out.println("è€—è´¹æ—¶é—´ : "+watch.elapsedTime());
 //		ArrayUtils.printArray(array);
 	}
 	
@@ -44,7 +44,7 @@ public class HelloWorld {
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		ShellSort.shellSort(array);
-		System.out.println("Ï£¶ûÅÅÐòÊ±¼ä : "+watch.elapsedTime());
+		System.out.println("è€—è´¹æ—¶é—´ : "+watch.elapsedTime());
 //		ArrayUtils.printArray(array);
 	}
 	
@@ -54,7 +54,7 @@ public class HelloWorld {
 		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		MergeSort.yuandiMerge(array);
-		System.out.println("Ï£¶ûÅÅÐòÊ±¼ä : "+watch.elapsedTime());
+		System.out.println("è€—è´¹æ—¶é—´ : "+watch.elapsedTime());
 		ArrayUtils.printArray(array);
 	}
 

@@ -1,13 +1,7 @@
 package com.xulp.sort;
 
-/**
- * ¹é²¢ÅÅÐò
- * @author Administrator
- *
- */
 public class MergeSort {
 
-	//ÓÐÂ©¶´
 	public static int [] yuandiMerge(int [] array)
 	{
 		int i = 0,mid = array.length / 2 ,hi = array.length - 1;
