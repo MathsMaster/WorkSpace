@@ -15,12 +15,13 @@ public class HelloWorld {
 //		testSelectSort();
 //		testInsertSort();
 //		testShellSort();
-		testYuanDiMergeSort();
+//		testYuanDiMergeSort();
+		testTopToBottomMergeSort();
 	}
 	
 	static void testSelectSort()
 	{
-		int array [] = ArrayUtils.generateArray(500000);
+		int array [] = ArrayUtils.generateArray(1000000);
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		SelectSort.selectSort(array);
@@ -30,7 +31,7 @@ public class HelloWorld {
 	
 	static void testInsertSort()
 	{
-		int array [] = ArrayUtils.generateArray(500000);
+		int array [] = ArrayUtils.generateArray(1000000);
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		InsertSort.insertSort(array);
@@ -40,7 +41,7 @@ public class HelloWorld {
 	
 	static void testShellSort()
 	{
-		int array [] = ArrayUtils.generateArray(10000000);
+		int array [] = ArrayUtils.generateArray(100000000);
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		ShellSort.shellSort(array);
@@ -53,9 +54,18 @@ public class HelloWorld {
 		int array [] = {1,2,3,4,5,6,10,7,9,8,12,11};
 		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
-		MergeSort.yuandiMerge(array);
+		MergeSort.merge(array);
 		System.out.println("耗费时间 : "+watch.elapsedTime());
 		ArrayUtils.printArray(array);
+	}
+	static void testTopToBottomMergeSort()
+	{
+		int array [] = ArrayUtils.generateArray(100000000);
+//		ArrayUtils.printArray(array);
+		Stopwatch watch = new Stopwatch();
+		MergeSort.topToBottomMerge(array);
+		System.out.println("耗费时间 : "+watch.elapsedTime());
+//		ArrayUtils.printArray(array);
 	}
 
 }
