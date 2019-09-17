@@ -14,7 +14,7 @@ public class HelloWorld {
 		System.out.println("Hello World!");
 //		testSelectSort();
 //		testInsertSort();
-//		testShellSort();
+		testShellSort();
 //		testYuanDiMergeSort();
 		testTopToBottomMergeSort();
 	}
@@ -41,7 +41,7 @@ public class HelloWorld {
 	
 	static void testShellSort()
 	{
-		int array [] = ArrayUtils.generateArray(100000000);
+		int array [] = ArrayUtils.generateArray(10000000);
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		ShellSort.shellSort(array);
@@ -60,7 +60,7 @@ public class HelloWorld {
 	}
 	static void testTopToBottomMergeSort()
 	{
-		int array [] = ArrayUtils.generateArray(100000000);
+		int array [] = ArrayUtils.generateArray(10000000);
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		MergeSort.topToBottomMerge(array);
