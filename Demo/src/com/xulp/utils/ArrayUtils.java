@@ -21,6 +21,17 @@ public class ArrayUtils {
 		return arrays;
 	}
 	
+	public static int [] generateArray(int size,int key)
+	{
+		int [] arrays = new int[size + 1];
+		for(int i = 0; i < arrays.length;i++ )
+		{
+			arrays[i] = (int) (Math.random()*10000000);
+			if(i == arrays.length / 2) arrays[i] = key;
+		}
+		return arrays;
+	}
+	
 	public static int [] generateCommonArray(int size)
 	{
 		int [] arrays = new int[size];

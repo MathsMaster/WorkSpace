@@ -1,5 +1,6 @@
 package com.xulp.demo;
 
+import com.xulp.search.BinarySearch;
 import com.xulp.sort.InsertSort;
 import com.xulp.sort.MergeSort;
 import com.xulp.sort.SelectSort;
@@ -14,9 +15,10 @@ public class HelloWorld {
 		System.out.println("Hello World!");
 //		testSelectSort();
 //		testInsertSort();
-		testShellSort();
+//		testShellSort();
 //		testYuanDiMergeSort();
-		testTopToBottomMergeSort();
+//		testTopToBottomMergeSort();
+		testBinarySearch();
 	}
 	
 	static void testSelectSort()
@@ -66,6 +68,19 @@ public class HelloWorld {
 		MergeSort.topToBottomMerge(array);
 		System.out.println("耗费时间 : "+watch.elapsedTime());
 //		ArrayUtils.printArray(array);
+	}
+	
+	static void testBinarySearch()
+	{
+		int array [] = ArrayUtils.generateArray(10000000,500000);
+		
+		MergeSort.topToBottomMerge(array);
+//		ArrayUtils.printArray(array);
+		Stopwatch watch = new Stopwatch();
+		int index = BinarySearch.rank(500000,array);
+		System.out.println("耗费时间 : "+watch.elapsedTime()+" index :" + index);
+
+//		ArrayUtils.printArray(
 	}
 
 }
