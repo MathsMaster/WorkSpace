@@ -3,6 +3,7 @@ package com.xulp.demo;
 import com.xulp.search.BinarySearch;
 import com.xulp.sort.InsertSort;
 import com.xulp.sort.MergeSort;
+import com.xulp.sort.QuickSort;
 import com.xulp.sort.SelectSort;
 import com.xulp.sort.ShellSort;
 import com.xulp.utils.ArrayUtils;
@@ -17,8 +18,9 @@ public class HelloWorld {
 //		testInsertSort();
 //		testShellSort();
 //		testYuanDiMergeSort();
-//		testTopToBottomMergeSort();
-		testBinarySearch();
+		testTopToBottomMergeSort();
+//		testBinarySearch();
+		testQuickSort();
 	}
 	
 	static void testSelectSort()
@@ -43,7 +45,7 @@ public class HelloWorld {
 	
 	static void testShellSort()
 	{
-		int array [] = ArrayUtils.generateArray(10000000);
+		int array [] = ArrayUtils.generateArray(100000000);
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		ShellSort.shellSort(array);
@@ -62,7 +64,7 @@ public class HelloWorld {
 	}
 	static void testTopToBottomMergeSort()
 	{
-		int array [] = ArrayUtils.generateArray(10000000);
+		int array [] = ArrayUtils.generateArray(100000000);
 //		ArrayUtils.printArray(array);
 		Stopwatch watch = new Stopwatch();
 		MergeSort.topToBottomMerge(array);
@@ -81,6 +83,16 @@ public class HelloWorld {
 		System.out.println("耗费时间 : "+watch.elapsedTime()+" index :" + index);
 
 //		ArrayUtils.printArray(
+	}
+	
+	static void testQuickSort()
+	{
+		int array [] = ArrayUtils.generateArray(100000000);
+//		ArrayUtils.printArray(array);
+		Stopwatch watch = new Stopwatch();
+		QuickSort.sort(array);
+		System.out.println("耗费时间 : "+watch.elapsedTime());
+//		ArrayUtils.printArray(array);
 	}
 
 }
