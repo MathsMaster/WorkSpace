@@ -10,8 +10,8 @@ public class Stopwatch {
 	}
 	
 	public long elapsedTime()
-	{
+	{ 
 		long now = System.currentTimeMillis();
 		return (now - start)/1000;
-	}
+	} 
 }

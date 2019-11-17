@@ -4,7 +4,7 @@ public class SeekUtils {
 
 	//二分查找有序数组,进行白名单过滤，即key不存在于array中时返回
 	public static int binarySearch(int key,int [] array)
-	{
+	{ 
 		if(array == null || array.length == 0)
 			return key;
 		int startIndex = 0;
