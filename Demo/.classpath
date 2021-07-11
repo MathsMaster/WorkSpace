@@ -7,5 +7,14 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="lib/algs4.jar"/>
+	<classpathentry kind="lib" path="lib/PDFBox-0.7.3.jar"/>
+	<classpathentry kind="lib" path="lib/ant.jar"/>
+	<classpathentry kind="lib" path="lib/bcmail-jdk14-132.jar"/>
+	<classpathentry kind="lib" path="lib/bcprov-jdk14-132.jar"/>
+	<classpathentry kind="lib" path="lib/checkstyle-all-4.2.jar"/>
+	<classpathentry kind="lib" path="lib/FontBox-0.1.0-dev.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-core-2.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-demos-2.0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
